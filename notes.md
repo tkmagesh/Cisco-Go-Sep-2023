@@ -113,3 +113,4 @@
     - Can have more than 1 return result
     - Support for variadic functions
         - the variadic parameter must be the final parameter
+    - Anonymous functions
