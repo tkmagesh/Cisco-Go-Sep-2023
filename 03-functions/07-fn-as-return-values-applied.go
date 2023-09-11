@@ -31,8 +31,10 @@ func main() {
 		profiledLogAdd(100, 200)
 	*/
 
-	profiledLogAdd := getProfiledOperation(getLogOperation(add))
+	profiledLogAdd := getProfiledOperation(getLogOperation(add, "add operation commences", "add operation completes"))
 	profiledLogAdd(100, 200)
+
+	getProfiledOperation(getLogOperation(multiply, "multiply operation commences", "multiply operation completes"))(100, 200)
 
 }
 
@@ -45,11 +47,11 @@ func getProfiledOperation(operation func(int, int)) func(int, int) {
 	}
 }
 
-func getLogOperation(operation func(int, int)) func(int, int) {
+func getLogOperation(operation func(int, int), startMsg, endMsg string) func(int, int) {
 	return func(x, y int) {
-		fmt.Println("Operation started")
+		fmt.Println(startMsg)
 		operation(100, 200)
-		fmt.Println("Operation Completed!")
+		fmt.Println(endMsg)
 	}
 }
 
@@ -60,4 +62,8 @@ func add(x, y int) {
 
 func subtract(x, y int) {
 	fmt.Println("Subtract Result :", x-y)
+}
+
+func multiply(x, y int) {
+	fmt.Println("Multiply Result :", x*y)
 }
