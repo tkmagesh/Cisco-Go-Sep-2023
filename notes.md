@@ -62,3 +62,40 @@
 - To cross compile
     - > GOOS=<target_os> GOARCH=<target_arch> go build <filename.go>
     - > ex: GOOS=windows GOARCH=386 go build 01-hello-world.go 
+
+## Go Datatypes ##
+- string
+- bool
+
+- int
+- int8
+- int16
+- int32
+- int64
+
+- uint
+- uint8
+- uint16
+- uint32
+- uint64
+
+- float32
+- float64
+
+- complex64 ( real[float32] + imaginary[float32] )
+- complex128 ( real[float64] + imaginary[float64] )
+
+- byte (alias for uint8)
+- rune (alias for int32) (unicode code point)
+
+## Variables ##
+- var keyword
+- := operator
+
+## Variable Scopes ##
+- function scope
+    - ":=" is allowed
+    - unused variables are not allowed
+- package scope
+    - cannot use ":=" syntax
+    - unused variables are allowed
