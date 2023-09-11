@@ -104,13 +104,17 @@
 - unused constants (at function / package scope is allowed)
 
 ## Constructs ##
-    - if else
-    - switch case
-    - for
-    - func
+- if else
+- switch case
+- for
+- func
 
 ## Functions ##
-    - Can have more than 1 return result
-    - Support for variadic functions
-        - the variadic parameter must be the final parameter
-    - Anonymous functions
+- Can have more than 1 return result
+- Support for variadic functions
+    - the variadic parameter must be the final parameter
+- Anonymous functions
+- Higher Order functions
+    - Assign functions as values to variables
+    - Pass functions as arguments
+    - Return functions as return values
