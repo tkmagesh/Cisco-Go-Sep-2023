@@ -99,3 +99,6 @@
 - package scope
     - cannot use ":=" syntax
     - unused variables are allowed
+    
+## Constants ##
+- unused constants (at function / package scope is allowed)
