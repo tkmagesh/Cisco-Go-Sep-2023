@@ -108,3 +108,8 @@
     - switch case
     - for
     - func
+
+## Functions ##
+    - Can have more than 1 return result
+    - Support for variadic functions
+        - the variadic parameter must be the final parameter
