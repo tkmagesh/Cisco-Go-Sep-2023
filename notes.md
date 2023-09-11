@@ -45,3 +45,20 @@
     - Built in scheduler to schedule the goroutines
     - N : M scheduler (N = # of goroutines & M = # of OS threads) where N >= M
     - Parallel execution is automatically taken care by the scheduler (when needed)
+
+## Go Programs ##
+- To run
+    - > go run <filename.go>
+- To build
+    - > go build <filename.go>
+    - > go build -o <binary_name> <filename.go>
+- To get the list of supported platforms
+    - > go tool dist list
+- To get the go tool env variables
+    - > go env
+- To change the env variables
+    - > go env -w <var_1>=<value_1> <var_2>=<value_2>
+    - > ex: go env -w GOOS=windows GOARCH=386
+- To cross compile
+    - > GOOS=<target_os> GOARCH=<target_arch> go build <filename.go>
+    - > ex: GOOS=windows GOARCH=386 go build 01-hello-world.go 
