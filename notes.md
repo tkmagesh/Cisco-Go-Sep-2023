@@ -102,3 +102,9 @@
     
 ## Constants ##
 - unused constants (at function / package scope is allowed)
+
+## Constructs ##
+    - if else
+    - switch case
+    - for
+    - func
