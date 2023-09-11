@@ -15,21 +15,34 @@ func main() {
 		fmt.Printf("Hi %s, Have a nice day!\n", userName)
 	}
 	greet("Magesh")
+
+	var greetUser func(string, string)
+	greetUser = func(firstName, lastName string) {
+		fmt.Printf("Hi %s %s, Have a nice day!\n", firstName, lastName)
+	}
+	greetUser("Magesh", "Kuppan")
+
+	var divide func(int, int) (int, int)
+	divide = func(x, y int) (quotient, remainder int) {
+		quotient = x / y
+		remainder = x % y
+		return
+	}
+	q, r := divide(100, 7)
+	fmt.Printf("Dividing 100 by 7, quotient = %d and remainder = %d\n", q, r)
+
+	var operation func(int, int) int
+	operation = add
+	fmt.Println(operation(10, 20))
+
+	operation = subtract
+	fmt.Println(operation(10, 20))
 }
 
-func greetUser(firstName, lastName string) {
-	fmt.Printf("Hi %s %s, Have a nice day!\n", firstName, lastName)
+func add(x, y int) int {
+	return x + y
 }
 
-// with 2 parameter & return result
-func getGreetMsg(firstName, lastName string) string {
-	return fmt.Sprintf("Hi %s %s, Have a nice day!\n", firstName, lastName)
-}
-
-// with 2 parameters & 2 return results
-// named results
-func divide(x, y int) (quotient, remainder int) {
-	quotient = x / y
-	remainder = x % y
-	return
+func subtract(x, y int) int {
+	return x - y
 }
