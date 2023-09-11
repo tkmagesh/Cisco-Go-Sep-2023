@@ -141,4 +141,44 @@ func main() {
 	case no%2 != 0:
 		fmt.Printf("%d is an odd number\n", no)
 	}
+
+	// for
+	fmt.Println()
+	fmt.Println("For")
+
+	fmt.Println("v1.0")
+	for i := 0; i < 10; i++ {
+		fmt.Printf("i = %d\n", i)
+	}
+
+	fmt.Println("v2.0 [while]")
+	x := 1
+	for x < 100 {
+		x += x
+	}
+	fmt.Println("x =", x)
+
+	fmt.Println("v3.0 [infinite]")
+	sum := 1
+	for {
+		sum += sum
+		if sum > 100 {
+			break
+		}
+	}
+	fmt.Println("sum =", sum)
+
+	// using labels
+OUTER_LOOP:
+	for x := 0; x <= 10; x++ {
+		for y := 0; y <= 10; y++ {
+			fmt.Printf("x = %d, y = %d\n", x, y)
+			if x == y {
+				fmt.Println("=========================")
+				continue OUTER_LOOP
+				// break OUTER_LOOP
+			}
+		}
+	}
+
 }
