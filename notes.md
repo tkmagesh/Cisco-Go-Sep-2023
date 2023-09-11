@@ -38,5 +38,10 @@
     - No exceptions (only errors)
     - No try-catch-finally construct
     - No implicity type conversions
-    
-- Better Concurrency
+    - No function overloading
+    - No operator overloading
+- Better Concurrency Model
+    - Goroutines (~4KB vs 2MB of OS threads)
+    - Built in scheduler to schedule the goroutines
+    - N : M scheduler (N = # of goroutines & M = # of OS threads) where N >= M
+    - Parallel execution is automatically taken care by the scheduler (when needed)
