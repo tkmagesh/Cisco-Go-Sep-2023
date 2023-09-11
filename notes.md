@@ -21,3 +21,22 @@
 - Go tools (https://go.dev/dl)
 - Visual Studio Code (https://code.visualstudio.com)
 - Go extension for VSCode (https://marketplace.visualstudio.com/items?itemName=golang.Go)
+
+## Who Go? ##
+- Performance
+    - On par with C++
+    - Close to the hardware
+        - Compiled to native code
+        - No JIT compilation
+- Simpler
+    - ONLY 25 keywords
+    - No access modifiers (public, private, protected)
+    - No classes (only structs)
+    - No inheritance (only composition)
+    - No reference types (everything is a value)
+    - No pointer arithmatic
+    - No exceptions (only errors)
+    - No try-catch-finally construct
+    - No implicity type conversions
+    
+- Better Concurrency
