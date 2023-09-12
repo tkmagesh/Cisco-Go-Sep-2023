@@ -158,4 +158,19 @@
 ![images slices](./images/slices.png)
 ### Maps ###
 - typed collection of key/value pairs
+- use "delete()" to delete an key/value pair
 
+## Modularity ##
+### Module ###
+- any code that need to versioned and deployed/released together
+- any folder that has the "go.mod" file is considered as a module
+- go.mod file
+    - name of the module
+    - go version
+    - 3rd dependency references
+- to create a go.mod file
+    - > go mod init <module_name>
+    - module_name => by convention the repo path where the module can be found
+### Package ###
+- internal organization of a module
+- any folder can treated like a package
