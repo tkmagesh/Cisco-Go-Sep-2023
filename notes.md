@@ -118,3 +118,12 @@
     - Assign functions as values to variables
     - Pass functions as arguments
     - Return functions as return values
+
+## Errors ##
+- Errors are values (objects)
+- Object implements the "error" interface
+- Error is not "thrown" but "returned" from a function
+- Default value of an error variable is "nil"
+- Ways of creating an error
+    - errors.New()
+    - fmt.Errorf()
