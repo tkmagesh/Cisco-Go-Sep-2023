@@ -149,3 +149,8 @@
 - fixed sized collection of data of the same type
 - memory is allocated and initialized with default values by default
 - can also be initialized with custom values
+### Slice ###
+- varying sized collection of data of the same type
+- Slice is a pointer to an underlying array
+- use "append()" function to append new values
+
