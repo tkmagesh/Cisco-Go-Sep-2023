@@ -191,3 +191,5 @@
 - > go mod why <module_name>
     - print the dependency graph of the given module
 - Reference (https://go.dev/ref/mod)
+
+## Structs ##
