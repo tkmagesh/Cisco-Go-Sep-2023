@@ -127,3 +127,8 @@
 - Ways of creating an error
     - errors.New()
     - fmt.Errorf()
+
+## Deferred Functions ##
+- functions whose execution is delayed until the current function execution is completed
+- prefix the function call with "defer"
+- can have any number of deferred functions in a function
