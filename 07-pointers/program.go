@@ -16,6 +16,10 @@ func main() {
 	increment(&no)
 	fmt.Println("After increment:", no)
 
+	x, y := 100, 200
+	fmt.Printf("Before swap: x=%d, y=%d\n", x, y)
+	swap(&x, &y)
+	fmt.Printf("After swap: x=%d, y=%d\n", x, y)
 }
 
 func increment(x *int) {
@@ -23,6 +27,6 @@ func increment(x *int) {
 	*x += 1
 }
 
-func swap( /*  */ ) /* no return values */ {
-
+func swap(n1, n2 *int) /* no return values */ {
+	*n1, *n2 = *n2, *n1
 }
