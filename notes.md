@@ -174,3 +174,20 @@
 ### Package ###
 - internal organization of a module
 - any folder can treated like a package
+### 3rd party modules ###
+- > go get <module_name>
+    - to add references to the 3rd party modules
+    - module is downloaded in the $GOPATH$/pkg/mod/... folder
+- > go get -u <module_name>
+    - upgrade the dependency
+- > go mod tidy
+    - to update the go.mod file
+- > go mod download
+    - to download the dependencies (from go.mod file) into the module cache ($GOPATH/pkg/mod/... folder)
+- > go mod vendor
+    - to localize the dependenicies in a local "vendor" folder
+- > go mod graph
+    - print the dependency graph
+- > go mod why <module_name>
+    - print the dependency graph of the given module
+- Reference (https://go.dev/ref/mod)
