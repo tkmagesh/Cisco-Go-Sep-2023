@@ -132,3 +132,11 @@
 - functions whose execution is delayed until the current function execution is completed
 - prefix the function call with "defer"
 - can have any number of deferred functions in a function
+
+## Panic & Recovery ##
+### Panic ###
+- state of the application that prevents the application execution to move forward
+- Use the "panic()" function to programatically raise a panic (typically with an error)
+### Recovery ###
+- Use "recover()" function to get the error that resulted in the panic
+- typically used in the deferred functions
