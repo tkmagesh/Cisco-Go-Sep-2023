@@ -26,13 +26,26 @@ func main() {
 	nos = append(nos, tens...)
 	fmt.Println(nos)
 
-	nos2 := nos
-	nos2[0] = 100
-	fmt.Println(nos)  //?
-	fmt.Println(nos2) //?
-
 	sort(nos)
 	fmt.Println(nos)
+
+	nos2 := nos[2:4]
+	fmt.Println(nos2)
+
+	// change nos2
+	nos2[0] = 999
+	fmt.Println("nos :", nos)
+	fmt.Println("nos2 :", nos2)
+
+	fmt.Println("nos[2:5] :", nos[2:5])
+	fmt.Println("nos[:5] :", nos[:5])
+	fmt.Println("nos[2:] :", nos[2:])
+
+	// appending the copy of the slice
+	nos2 = append(nos2, 1000)
+	fmt.Println("After appending to nos2")
+	fmt.Println("nos :", nos)
+	fmt.Println("nos2 :", nos2)
 }
 
 func sort(values []int) /* no return values */ {

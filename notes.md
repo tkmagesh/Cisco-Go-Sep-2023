@@ -153,4 +153,7 @@
 - varying sized collection of data of the same type
 - Slice is a pointer to an underlying array
 - use "append()" function to append new values
+- use "copy()" function to create a copy with data
+- use "cap()" function to get the capacity
+![images slices](./images/slices.png)
 
