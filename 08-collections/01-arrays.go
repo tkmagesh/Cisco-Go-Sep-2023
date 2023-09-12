@@ -33,10 +33,21 @@ func main() {
 	fmt.Println((*nosPtr)[0])
 	fmt.Println(nosPtr[0]) // NO NEED to deference the pointer to an array to access the individual elements
 
-	sort( /* ? */ ) // sort the nos array
+	sort(&nos) // sort the nos array
 	fmt.Println(nos)
+
+	nos2 := nos // COPY the nos array
+	nos2[0] = 100
+	fmt.Println(nos)
+	fmt.Println(nos2)
 }
 
-func sort( /*  */ ) /* no return values */ {
-
+func sort(values *[5]int) /* no return values */ {
+	for i := 0; i < len(values)-1; i++ {
+		for j := i + 1; j < len(values); j++ {
+			if values[i] > values[j] {
+				values[i], values[j] = values[j], values[i]
+			}
+		}
+	}
 }
