@@ -140,3 +140,12 @@
 ### Recovery ###
 - Use "recover()" function to get the error that resulted in the panic
 - typically used in the deferred functions
+
+## Collections ##
+- Array
+- Slice
+- Map
+### Array ###
+- fixed sized collection of data of the same type
+- memory is allocated and initialized with default values by default
+- can also be initialized with custom values
