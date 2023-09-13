@@ -225,3 +225,5 @@
         - Send Operation
             - send operation will be blocked until a "receive" operation is initiated (conditional)
         ![image channel-behaviors](./images/channel-behaviors.png)
+    - Advanced Concurrency Patterns
+        - https://www.youtube.com/watch?v=QDDwwePbDtw
