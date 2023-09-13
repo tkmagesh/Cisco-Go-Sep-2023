@@ -204,3 +204,17 @@
 - To detect data race
     - go run --race <program.go>
     - go build --race <program.go>
+- Channels
+    - data type for enabling communication between goroutines
+    - typed
+    - Declaration
+        - > var <var_name> chan <data_type>
+        - > ex: var ch chan int
+    - Intialization
+        - > ch = make(chan int)
+    - Operations
+        - using channel operator **( <- )**
+        - Send Operation
+            - > ch <- 100
+        - Receive Operation
+            - > data := <- ch
