@@ -28,14 +28,14 @@ func main() {
 	// y = 100
 	// y = true
 	// y = 19.99
-	y = struct{}{}
-	/*
-		y = struct {
-			id int
-		}{
-			id: 100,
-		}
-	*/
+	// y = struct{}{}
+
+	y = struct {
+		id int
+	}{
+		id: 100,
+	}
+
 	switch val := y.(type) {
 	case int:
 		fmt.Println("y is an integer, y * 2 = ", val*2)
@@ -47,6 +47,8 @@ func main() {
 		fmt.Println("y is a float64, y * 0.95 = ", val*0.95)
 	case struct{}:
 		fmt.Println("y is a struct")
+	case struct{ id int }:
+		fmt.Println("y is a struct with id, y.id = ", val.id)
 	case nil:
 		fmt.Println("y is not initialized")
 	default:
