@@ -198,3 +198,6 @@
 ## Methods ##
 - functions with "receivers"
 - methods should exist in the same package where the struct is defined
+
+## Concurrency ##
+- Concurrency features are built in the language
