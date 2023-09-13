@@ -9,10 +9,9 @@ import (
 var wg sync.WaitGroup
 
 func main() {
-	for i := 0; i < 10; i++ {
-		wg.Add(1) // increment the waitgroup counter by 1
-		go f1()   // scheduling this function to be executed by the scheduler
-	}
+
+	wg.Add(10)
+	go f1()
 	f2()
 	wg.Wait() // blocks the execution of the main() until the counter in the waitgroup is 0
 }

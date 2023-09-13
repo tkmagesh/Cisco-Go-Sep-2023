@@ -201,3 +201,6 @@
 
 ## Concurrency ##
 - Concurrency features are built in the language
+- To detect data race
+    - go run --race <program.go>
+    - go build --race <program.go>
