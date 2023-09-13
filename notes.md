@@ -167,13 +167,14 @@
 - go.mod file
     - name of the module
     - go version
-    - 3rd dependency references
+    - 3rd party dependency references
 - to create a go.mod file
     - > go mod init <module_name>
     - module_name => by convention the repo path where the module can be found
 ### Package ###
 - internal organization of a module
 - any folder can treated like a package
+- any number of "init" functions are allowed in a package
 ### 3rd party modules ###
 - > go get <module_name>
     - to add references to the 3rd party modules

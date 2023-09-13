@@ -18,7 +18,7 @@ func main() {
 
 func divide(x, y int) (quotient, remainder int) {
 	fmt.Println("[divide] - calculating quotient")
-	quotient = x / y
+	quotient = x / y // results in a panic if y == 0
 	fmt.Println("[divide] - calculating remainder")
 	remainder = x % y
 	return
