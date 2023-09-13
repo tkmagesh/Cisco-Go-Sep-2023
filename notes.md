@@ -194,3 +194,7 @@
 - Reference (https://go.dev/ref/mod)
 
 ## Structs ##
+
+## Methods ##
+- functions with "receivers"
+- methods should exist in the same package where the struct is defined
