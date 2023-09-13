@@ -218,3 +218,10 @@
             - > ch <- 100
         - Receive Operation
             - > data := <- ch
+    - Behaviors
+        - Receive Operation
+            - always a blocking operation
+            - receive operation will be blocked until data becomes available in the channel
+        - Send Operation
+            - send operation will be blocked until a "receive" operation is initiated (conditional)
+        ![image channel-behaviors](./images/channel-behaviors.png)
